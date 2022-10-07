@@ -25,7 +25,7 @@ export class App extends Component {
   }
 
   onLeaveFeedback = (e) => {
-    const key = e.target.textContent.toLowerCase();
+    const key = e.target.name;
     this.setState(prevState=>({[key]: prevState[key] + 1}))
   }
   
